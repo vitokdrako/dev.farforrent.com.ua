@@ -57,7 +57,7 @@ ROOT_URLCONF = 'farforre.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'farforre' / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
