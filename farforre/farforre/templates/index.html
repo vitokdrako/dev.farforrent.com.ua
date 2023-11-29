@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <!doctype html>
 <html>
   <head>
@@ -48,11 +49,12 @@
             </div>
           </div>
           <div class="right group">
-            <p class="text-6">HOME</p>
-            <p class="text-6">GALLERY</p>
-            <p class="text-6">COLLECTIONS</p>
-            <p class="text-6">ABOUT US</p>
-            <p class="text-6">CONTACTS</p>
+            <p class="text-6">{% trans "HOME" %}</p>
+            <p class="text-6">{% trans "GALLERY" %}</p>
+            <p class="text-6">{% trans "COLLECTIONS" %}</p>
+            <p class="text-6">{% trans "ABOUT US" %}</p>
+            <p class="text-6">{% trans "CONTACTS" %}</p>
+
             <div class="btn-menu">
               <div class="rectangle-82"></div>
               <div class="rectangle-82-copy"></div>
