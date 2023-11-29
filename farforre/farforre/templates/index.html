@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html>
   <head>
@@ -7,7 +8,7 @@
     <meta name="keywords" content="Your site's keywords should be here">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">  
     <!--[if IE 6]>
 	<style type="text/css">
 		* html .group {
@@ -28,7 +29,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900,900italic&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;subset=cyrillic,cyrillic-ext,latin,latin-ext,vietnamese">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/match-height.js"></script> 
+    <script src="{% static 'js/match-height.js' %}"></script> 
     <script>
 		$(function () {
 			$('.match-height-bootstrap-row > * > *').matchHeight();
@@ -42,25 +43,25 @@
         <div class="header-2 group">
           <div class="left">
             <div class="logo group">
-              <img class="layer" src="images/logo_sch_n_2.png" alt="" width="102" height="29">
+              <img class="layer" src="{% static 'images/logo_sch_n_2.png' %}" alt="" width="102" height="29">
               <div class="dot"></div>
             </div>
           </div>
           <div class="right group">
-            <img class="text" src="images/home_products_collections.png" alt="HOME          PRODUCTS          COLLECTIONS          PAGES         ABOUT           CONTACT" width="668" height="12" title="HOME          PRODUCTS          COLLECTIONS          PAGES         ABOUT           CONTACT">
+            <img class="text" src="{% static 'images/home_products_collections.png' %}" alt="HOME          PRODUCTS          COLLECTIONS          PAGES         ABOUT           CONTACT" width="668" height="12" title="HOME          PRODUCTS          COLLECTIONS          PAGES         ABOUT           CONTACT">
             <div class="btn-menu">
               <div class="rectangle-82"></div>
               <div class="rectangle-82-copy"></div>
               <div class="rectangle-82-copy-2"></div>
             </div>
             <div class="basket-icon">
-              <img class="handbag" src="images/handbag.png" alt="" width="24" height="24">
+              <img class="handbag" src="{% static 'images/handbag.png' %}" alt="" width="24" height="24">
               <div class="ellipse-5-holder">
                 3
               </div>
             </div>
-            <img class="heart" src="images/heart.png" alt="" width="25" height="22">
-            <img class="magnifier" src="images/magnifier.png" alt="" width="24" height="24">
+            <img class="heart" src="{% static 'images/heart.png' %}" alt="" width="25" height="22">
+            <img class="magnifier" src="{% static 'images/magnifier.png' %}" alt="" width="24" height="24">
           </div>
         </div>
         <div class="section-slider group">
@@ -92,7 +93,7 @@
                   <div class="btn-shop group">
                     <p class="text-8">SHOP NOW</p>
                     <div class="ellipse-7-copy-3-holder">
-                      <img class="text-9" src="images/image_47.png" alt="" width="5" height="9" title="">
+                      <img class="text-9" src="{% static 'images/image_47.png' %}" alt="" width="5" height="9" title="">
                     </div>
                   </div>
                   <div class="off">
@@ -116,7 +117,7 @@
                 <div class="btn-shop-2 group">
                   <p class="text-17">SHOP NOW</p>
                   <div class="ellipse-7-copy-3-holder-2">
-                    <img class="text-18" src="images/image_47.png" alt="" width="5" height="9" title="">
+                    <img class="text-18" src="{% static 'images/image_47.png' %}" alt="" width="5" height="9" title="">
                   </div>
                 </div>
               </div>
@@ -132,10 +133,10 @@
                 </div>
                 <div class="arrows match-height group">
                   <div class="ellipse-6-copy-holder">
-                    <img class="text-20" src="images/image_46.png" alt="" width="6" height="11" title="">
+                    <img class="text-20" src="{% static 'images/image_46.png' %}" alt="" width="6" height="11" title="">
                   </div>
                   <div class="ellipse-6-holder">
-                    <img class="text-21" src="images/image_45.png" alt="" width="6" height="11" title="">
+                    <img class="text-21" src="{% static 'images/image_45.png' %}" alt="" width="6" height="11" title="">
                   </div>
                 </div>
               </div>
@@ -146,24 +147,24 @@
                       NEW
                     </div>
                     <div class="stars group">
-                      <img src="images/image_5.png" alt="" width="11" height="11" title="">
-                      <img src="images/image_5.png" alt="" width="11" height="11" title="">
-                      <img src="images/image_5.png" alt="" width="11" height="11" title="">
-                      <img src="images/image_8.png" alt="" width="11" height="11" title="">
+                      <img src="{% static 'images/image_5.png' %}" alt="" width="11" height="11" title="">
+                      <img src="{% static 'images/image_5.png' %}" alt="" width="11" height="11" title="">
+                      <img src="{% static 'images/image_5.png' %}" alt="" width="11" height="11" title="">
+                      <img src="{% static 'images/image_8.png' %}" alt="" width="11" height="11" title="">
                     </div>
                   </div>
                   <p class="text-26">Puff Chair</p>
-                  <img class="text-27" src="images/287_00.png" alt="  287,00" width="64" height="15" title="  287,00">
+                  <img class="text-27" src="{% static 'images/287_00.png' %}" alt="  287,00" width="64" height="15" title="  287,00">
                 </div>
                 <div class="pro-2">
-                  <img class="bg" src="images/bg_2.jpg" alt="">
+                  <img class="bg" src="{% static 'images/bg_2.jpg' %}" alt="">
                   <p class="text-28">Bombi Chair</p>
-                  <img class="text-29" src="images/399_00_3.png" alt="  399,00" width="65" height="16" title="  399,00">
+                  <img class="text-29" src="{% static 'images/399_00_3.png' %}" alt="  399,00" width="65" height="16" title="  399,00">
                 </div>
                 <div class="pro-3">
-                  <img class="bg-2" src="images/bg_2.jpg" alt="">
+                  <img class="bg-2" src="{% static 'images/bg_2.jpg' %}" alt="">
                   <p class="text-30">Wood Chair</p>
-                  <img class="text-31" src="images/198_00.png" alt="  198,00" width="64" height="15" title="  198,00">
+                  <img class="text-31" src="{% static 'images/198_00.png' %}" alt="  198,00" width="64" height="15" title="  198,00">
                 </div>
                 <div class="pro-4">
                   <div class="col">
@@ -174,38 +175,38 @@
                       NEW
                     </div>
                     <div class="stars-2 group">
-                      <img src="images/image_25.png" alt="" width="11" height="11" title="">
-                      <img src="images/image_25.png" alt="" width="11" height="11" title="">
-                      <img src="images/image_25.png" alt="" width="11" height="11" title="">
-                      <img src="images/image_28.png" alt="" width="11" height="11" title="">
+                      <img src="{% static 'images/image_25.png' %}" alt="" width="11" height="11" title="">
+                      <img src="{% static 'images/image_25.png' %}" alt="" width="11" height="11" title="">
+                      <img src="{% static 'images/image_25.png' %}" alt="" width="11" height="11" title="">
+                      <img src="{% static 'images/image_28.png' %}" alt="" width="11" height="11" title="">
                     </div>
                   </div>
                   <p class="text-37">Bombi Chair</p>
-                  <img class="text-38" src="images/200_00_3.png" alt="  200,00" width="64" height="15" title="  200,00">
+                  <img class="text-38" src="{% static 'images/200_00_3.png' %}" alt="  200,00" width="64" height="15" title="  200,00">
                 </div>
                 <div class="pro-5">
-                  <img class="bg-3" src="images/bg_2.jpg" alt="">
+                  <img class="bg-3" src="{% static 'images/bg_2.jpg' %}" alt="">
                   <p class="text-39">Bombi Chair</p>
-                  <img class="text-40" src="images/200_00_2.png" alt="  200,00" width="65" height="16" title="  200,00">
+                  <img class="text-40" src="{% static 'images/200_00_2.png' %}" alt="  200,00" width="65" height="16" title="  200,00">
                 </div>
               </div>
               <div class="row-20 match-height group">
                 <div class="pro-6">
-                  <img class="bg-4" src="images/bg_2.jpg" alt="">
+                  <img class="bg-4" src="{% static 'images/bg_2.jpg' %}" alt="">
                   <div class="stars-3 group">
-                    <img src="images/image_5.png" alt="" width="11" height="11" title="">
-                    <img src="images/image_5.png" alt="" width="11" height="11" title="">
-                    <img src="images/image_5.png" alt="" width="11" height="11" title="">
-                    <img src="images/image_8.png" alt="" width="11" height="11" title="">
+                    <img src="{% static 'images/image_5.png' %}" alt="" width="11" height="11" title="">
+                    <img src="{% static 'images/image_5.png' %}" alt="" width="11" height="11" title="">
+                    <img src="{% static 'images/image_5.png' %}" alt="" width="11" height="11" title="">
+                    <img src="{% static 'images/image_8.png' %}" alt="" width="11" height="11" title="">
                   </div>
                   <p class="text-45">Easy chair with armrests</p>
-                  <img class="text-46" src="images/287_00.png" alt="  287,00" width="64" height="15" title="  287,00">
+                  <img class="text-46" src="{% static 'images/287_00.png' %}" alt="  287,00" width="64" height="15" title="  287,00">
                 </div>
                 <div class="wrapper-17">
                   <div class="pro-8">
-                    <img class="bg-5" src="images/bg_2.jpg" alt="">
+                    <img class="bg-5" src="{% static 'images/bg_2.jpg' %}" alt="">
                     <p class="text-47">Trestle-based chair</p>
-                    <img class="text-48" src="images/198_00.png" alt="  198,00" width="64" height="15" title="  198,00">
+                    <img class="text-48" src="{% static 'images/198_00.png' %}" alt="  198,00" width="64" height="15" title="  198,00">
                   </div>
                   <div class="pro-7">
                     <div class="bg-holder">
@@ -214,24 +215,24 @@
                       </div>
                     </div>
                     <div class="stars-4 group">
-                      <img src="images/image_5.png" alt="" width="11" height="11" title="">
-                      <img src="images/image_5.png" alt="" width="11" height="11" title="">
-                      <img src="images/image_5.png" alt="" width="11" height="11" title="">
-                      <img src="images/image_8.png" alt="" width="11" height="11" title="">
+                      <img src="{% static 'images/image_5.png' %}" alt="" width="11" height="11" title="">
+                      <img src="{% static 'images/image_5.png' %}" alt="" width="11" height="11" title="">
+                      <img src="{% static 'images/image_5.png' %}" alt="" width="11" height="11" title="">
+                      <img src="{% static 'images/image_8.png' %}" alt="" width="11" height="11" title="">
                     </div>
                     <p class="text-54">Upholstered chair</p>
-                    <img class="text-55" src="images/399_00_3.png" alt="  399,00" width="65" height="16" title="  399,00">
+                    <img class="text-55" src="{% static 'images/399_00_3.png' %}" alt="  399,00" width="65" height="16" title="  399,00">
                   </div>
                 </div>
                 <div class="pro-9">
-                  <img class="bg-6" src="images/bg_2.jpg" alt="">
+                  <img class="bg-6" src="{% static 'images/bg_2.jpg' %}" alt="">
                   <p class="text-56">Bombi Chair</p>
-                  <img class="text-57" src="images/200_00_3.png" alt="  200,00" width="64" height="15" title="  200,00">
+                  <img class="text-57" src="{% static 'images/200_00_3.png' %}" alt="  200,00" width="64" height="15" title="  200,00">
                 </div>
                 <div class="pro-10">
-                  <img class="bg-7" src="images/bg_2.jpg" alt="">
+                  <img class="bg-7" src="{% static 'images/bg_2.jpg' %}" alt="">
                   <p class="text-58">Bombi Chair</p>
-                  <img class="text-59" src="images/200_00_2.png" alt="  200,00" width="65" height="16" title="  200,00">
+                  <img class="text-59" src="{% static 'images/200_00_2.png' %}" alt="  200,00" width="65" height="16" title="  200,00">
                 </div>
               </div>
             </div>
@@ -245,7 +246,7 @@
             </div>
             <div class="row-22 group">
               <div class="left-2">
-                <img class="text-62" src="images/copy_3.png" alt="" width="9" height="15" title="">
+                <img class="text-62" src="{% static 'images/copy_3.png' %}" alt="" width="9" height="15" title="">
               </div>
               <div class="product-1">
                 <div class="rectangle-89-holder">
@@ -254,27 +255,27 @@
                   </div>
                 </div>
                 <p class="text-64">Bombi Chair</p>
-                <img class="text-65" src="images/399_00_2.png" alt="  399,00" width="83" height="20" title="  399,00">
+                <img class="text-65" src="{% static 'images/399_00_2.png' %}" alt="  399,00" width="83" height="20" title="  399,00">
               </div>
               <div class="product-2">
                 <p class="text-66">Marvelous Modern 3 Seater</p>
-                <img class="text-67" src="images/599_00.png" alt="  599,00" width="82" height="20" title="  599,00">
+                <img class="text-67" src="{% static 'images/599_00.png' %}" alt="  599,00" width="82" height="20" title="  599,00">
               </div>
               <div class="product-3">
                 <div class="off-icon-4">
                   15% Off
                 </div>
                 <p class="text-69">Puff &nbsp;Armchair</p>
-                <img class="text-70" src="images/200_00.png" alt="  200,00" width="82" height="20" title="  200,00">
+                <img class="text-70" src="{% static 'images/200_00.png' %}" alt="  200,00" width="82" height="20" title="  200,00">
               </div>
               <div class="product-4">
                 <div class="product">
                   <p class="text-71">Bombi Chair</p>
-                  <img class="text-72" src="images/399_00.png" alt="  399,00" width="82" height="20" title="  399,00">
+                  <img class="text-72" src="{% static 'images/399_00.png' %}" alt="  399,00" width="82" height="20" title="  399,00">
                 </div>
               </div>
               <div class="right-2">
-                <img class="text-73" src="images/copy_2.png" alt="" width="9" height="15" title="">
+                <img class="text-73" src="{% static 'images/copy_2.png' %}" alt="" width="9" height="15" title="">
               </div>
             </div>
           </div>
@@ -283,14 +284,14 @@
           <div class="widget-1">
             <p class="text-74">Hot Sale</p>
             <div class="product-1-2 group">
-              <img class="bg-8" src="images/rectangle_58_5.png" alt="">
+              <img class="bg-8" src="{% static 'images/rectangle_58_5.png' %}" alt="">
               <div class="col-8">
                 <p class="text-75">Egon Wooden Chair</p>
                 <div class="stars-5 group">
-                  <img src="images/image_25.png" alt="" width="11" height="11" title="">
-                  <img src="images/image_25.png" alt="" width="11" height="11" title="">
-                  <img src="images/image_25.png" alt="" width="11" height="11" title="">
-                  <img src="images/image_28.png" alt="" width="11" height="11" title="">
+                  <img src="{% static 'images/image_25.png' %}" alt="" width="11" height="11" title="">
+                  <img src="{% static 'images/image_25.png' %}" alt="" width="11" height="11" title="">
+                  <img src="{% static 'images/image_25.png' %}" alt="" width="11" height="11" title="">
+                  <img src="{% static 'images/image_28.png' %}" alt="" width="11" height="11" title="">
                 </div>
                 <div class="offf-price group">
                   <div class="wrapper-14">
@@ -304,23 +305,23 @@
               </div>
             </div>
             <div class="product-2-2 group">
-              <img class="rectangle-58" src="images/rectangle_58_5.png" alt="">
+              <img class="rectangle-58" src="{% static 'images/rectangle_58_5.png' %}" alt="">
               <div class="col-7">
                 <p class="text-82">Oyo Cantilever Chair</p>
                 <p class="text-83">$55,00</p>
               </div>
             </div>
             <div class="product-3-2 group">
-              <img class="rectangle-58-2" src="images/rectangle_58_4.png" alt="">
+              <img class="rectangle-58-2" src="{% static 'images/rectangle_58_4.png' %}" alt="">
               <div class="col-21">
                 <p class="text-84">Kurve Chair</p>
                 <div class="row-21 group">
                   <div class="col-22">
                     <div class="stars-6 group">
-                      <img src="images/image_5.png" alt="" width="11" height="11" title="">
-                      <img src="images/image_5.png" alt="" width="11" height="11" title="">
-                      <img src="images/image_5.png" alt="" width="11" height="11" title="">
-                      <img src="images/image_8.png" alt="" width="11" height="11" title="">
+                      <img src="{% static 'images/image_5.png' %}" alt="" width="11" height="11" title="">
+                      <img src="{% static 'images/image_5.png' %}" alt="" width="11" height="11" title="">
+                      <img src="{% static 'images/image_5.png' %}" alt="" width="11" height="11" title="">
+                      <img src="{% static 'images/image_8.png' %}" alt="" width="11" height="11" title="">
                     </div>
                     <div class="wrapper-19">
                       <p class="text-89">$75,00</p>
@@ -335,7 +336,7 @@
           <div class="widget-2 group">
             <p class="text-91">Featured Products</p>
             <div class="product-1-3 group">
-              <img class="rectangle-58-3" src="images/rectangle_58_6.png" alt="">
+              <img class="rectangle-58-3" src="{% static 'images/rectangle_58_6.png' %}" alt="">
               <div class="col-20">
                 <p class="text-92">Bombi Chair</p>
                 <div class="row-18 group">
@@ -348,14 +349,14 @@
               </div>
             </div>
             <div class="product-2-3 group">
-              <img class="rectangle-58-4" src="images/rectangle_58_5.png" alt="">
+              <img class="rectangle-58-4" src="{% static 'images/rectangle_58_5.png' %}" alt="">
               <div class="col-6">
                 <p class="text-95">Oyo Cantilever Chair</p>
                 <p class="text-96">$55,00</p>
               </div>
             </div>
             <div class="product-3-3 group">
-              <img class="rectangle-58-5" src="images/rectangle_58_4.png" alt="">
+              <img class="rectangle-58-5" src="{% static 'images/rectangle_58_4.png' %}" alt="">
               <div class="col-19">
                 <p class="text-97">Puff Chair</p>
                 <div class="row-17 group">
@@ -371,7 +372,7 @@
           <div class="widget-3 group">
             <p class="text-100">Sale Products</p>
             <div class="product-1-4 group">
-              <img class="rectangle-58-6" src="images/rectangle_58_6.png" alt="">
+              <img class="rectangle-58-6" src="{% static 'images/rectangle_58_6.png' %}" alt="">
               <div class="col-18">
                 <p class="text-101">Marvelous Wooden<br>Chair</p>
                 <div class="row-16 group">
@@ -384,20 +385,20 @@
               </div>
             </div>
             <div class="product-2-4 group">
-              <img class="rectangle-58-7" src="images/rectangle_58_5.png" alt="">
+              <img class="rectangle-58-7" src="{% static 'images/rectangle_58_5.png' %}" alt="">
               <div class="col-5">
                 <p class="text-104">Oyo Cantilever Chair</p>
                 <div class="stars-7 group">
-                  <img src="images/image_5.png" alt="" width="11" height="11" title="">
-                  <img src="images/image_5.png" alt="" width="11" height="11" title="">
-                  <img src="images/image_5.png" alt="" width="11" height="11" title="">
-                  <img src="images/image_8.png" alt="" width="11" height="11" title="">
+                  <img src="{% static 'images/image_5.png' %}" alt="" width="11" height="11" title="">
+                  <img src="{% static 'images/image_5.png' %}" alt="" width="11" height="11" title="">
+                  <img src="{% static 'images/image_5.png' %}" alt="" width="11" height="11" title="">
+                  <img src="{% static 'images/image_8.png' %}" alt="" width="11" height="11" title="">
                 </div>
                 <p class="text-109">$55,00</p>
               </div>
             </div>
             <div class="product-3-4 group">
-              <img class="rectangle-58-8" src="images/rectangle_58_4.png" alt="">
+              <img class="rectangle-58-8" src="{% static 'images/rectangle_58_4.png' %}" alt="">
               <div class="col-17">
                 <p class="text-110">Kurve Chair</p>
                 <div class="row-15 group">
@@ -413,14 +414,14 @@
           <div class="widget-4 group">
             <p class="text-113">Top Rated Products</p>
             <div class="product-1-5 group">
-              <img class="rectangle-58-9" src="images/rectangle_58_3.png" alt="">
+              <img class="rectangle-58-9" src="{% static 'images/rectangle_58_3.png' %}" alt="">
               <div class="col-16">
                 <p class="text-114">Egon Wooden Chair</p>
                 <div class="stars-8 group">
-                  <img src="images/image_5.png" alt="" width="11" height="11" title="">
-                  <img src="images/image_5.png" alt="" width="11" height="11" title="">
-                  <img src="images/image_5.png" alt="" width="11" height="11" title="">
-                  <img src="images/image_8.png" alt="" width="11" height="11" title="">
+                  <img src="{% static 'images/image_5.png' %}" alt="" width="11" height="11" title="">
+                  <img src="{% static 'images/image_5.png' %}" alt="" width="11" height="11" title="">
+                  <img src="{% static 'images/image_5.png' %}" alt="" width="11" height="11" title="">
+                  <img src="{% static 'images/image_8.png' %}" alt="" width="11" height="11" title="">
                 </div>
                 <div class="row-14 group">
                   <div class="off-price-5">
@@ -432,27 +433,27 @@
               </div>
             </div>
             <div class="product-2-5 group">
-              <img class="rectangle-58-10" src="images/rectangle_58_2.png" alt="">
+              <img class="rectangle-58-10" src="{% static 'images/rectangle_58_2.png' %}" alt="">
               <div class="col-4">
                 <p class="text-121">Oyo Cantilever Chair</p>
                 <div class="stars-9 group">
-                  <img src="images/image_5.png" alt="" width="11" height="11" title="">
-                  <img src="images/image_5.png" alt="" width="11" height="11" title="">
-                  <img src="images/image_5.png" alt="" width="11" height="11" title="">
-                  <img src="images/image_8.png" alt="" width="11" height="11" title="">
+                  <img src="{% static 'images/image_5.png' %}" alt="" width="11" height="11" title="">
+                  <img src="{% static 'images/image_5.png' %}" alt="" width="11" height="11" title="">
+                  <img src="{% static 'images/image_5.png' %}" alt="" width="11" height="11" title="">
+                  <img src="{% static 'images/image_8.png' %}" alt="" width="11" height="11" title="">
                 </div>
                 <p class="text-126">$55,00</p>
               </div>
             </div>
             <div class="product-3-5 group">
-              <img class="rectangle-58-11" src="images/rectangle_58.png" alt="">
+              <img class="rectangle-58-11" src="{% static 'images/rectangle_58.png' %}" alt="">
               <div class="col-14">
                 <p class="text-127">Kurve Chair</p>
                 <div class="stars-10 group">
-                  <img src="images/image_5.png" alt="" width="11" height="11" title="">
-                  <img src="images/image_5.png" alt="" width="11" height="11" title="">
-                  <img src="images/image_5.png" alt="" width="11" height="11" title="">
-                  <img src="images/image_8.png" alt="" width="11" height="11" title="">
+                  <img src="{% static 'images/image_5.png' %}" alt="" width="11" height="11" title="">
+                  <img src="{% static 'images/image_5.png' %}" alt="" width="11" height="11" title="">
+                  <img src="{% static 'images/image_5.png' %}" alt="" width="11" height="11" title="">
+                  <img src="{% static 'images/image_8.png' %}" alt="" width="11" height="11" title="">
                 </div>
                 <div class="row-13 group">
                   <div class="off-price-6">
