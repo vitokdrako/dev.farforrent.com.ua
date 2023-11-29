@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+import os
 from pathlib import Path
 import pymysql
 pymysql.install_as_MySQLdb()
@@ -45,12 +46,12 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.middleware.locale.LocaleMiddleware',
 ]
 
 ROOT_URLCONF = 'farforre.urls'
@@ -115,8 +116,10 @@ LANGUAGE_CODE = 'en-us'
 
 LANGUAGES = [
     ('en', 'English'),
-    ('uk', 'Українська'),
+    ('uk', 'Ukrainian'),
 ]
+
+LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale'),]
 
 TIME_ZONE = 'UTC'
 

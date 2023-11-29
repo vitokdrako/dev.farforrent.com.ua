@@ -38,6 +38,21 @@
 		})
 	</script>
   </head>
+  <form action="{% url 'set_language' %}" method="post">
+    {% csrf_token %}
+    <input name="next" type="hidden" value="{{ redirect_to }}">
+    <select name="language">
+        {% get_current_language as LANGUAGE_CODE %}
+        {% get_available_languages as LANGUAGES %}
+        {% for lang in LANGUAGES %}
+            <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %} selected {% endif %}>
+                {{ lang.1 }}
+            </option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="{% trans 'Change' %}">
+</form>
+
   <body>
     <div class="global_container_">
       <header class="header">
@@ -49,7 +64,7 @@
             </div>
           </div>
           <div class="right group">
-            <p class="text-6">{% trans "HOME" %}</p>
+            <p class="text-6">{% trans "ГОЛОВНА" %}</p>
             <p class="text-6">{% trans "GALLERY" %}</p>
             <p class="text-6">{% trans "COLLECTIONS" %}</p>
             <p class="text-6">{% trans "ABOUT US" %}</p>

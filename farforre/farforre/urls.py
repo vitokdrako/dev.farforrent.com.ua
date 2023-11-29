@@ -19,7 +19,12 @@ from django.urls import include, path
 from django.conf.urls.i18n import i18n_patterns
 from . import views
 
-urlpatterns = i18n_patterns(
+urlpatterns = [
+    path('i18n/', include('django.conf.urls.i18n')),
+    # ... ваші інші URL-шляхи ...
+]
+
+urlpatterns += i18n_patterns(
     path("polls/", include("polls.urls")),
     path("admin/", admin.site.urls),
     path('', views.index, name='index'),
