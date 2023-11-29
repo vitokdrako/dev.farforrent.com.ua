@@ -182,16 +182,6 @@ body {
   float: left;
   margin: 0 3px 0 0;
 }
-.dot {
-  float: left;
-  height: 7px;
-  margin: 22px 0 0;
-  width: 7px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  background: #ff6060;
-}
 .right {
   float: right;
   margin: 5px 0 0;
