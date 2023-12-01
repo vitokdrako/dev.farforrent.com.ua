@@ -160,6 +160,11 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+
+.header {
+  font-family: 'FarforCustomFont', sans-serif;
+}
+
 .fixed-header {
   position: fixed;
   top: 0;
@@ -2303,4 +2308,11 @@ body {
 }
 .text-style {
   line-height: 18px;
+}
+
+@font-face {
+  font-family: 'FarforCustomFont';
+  src: url('/fonts/FARFOR_Script.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
