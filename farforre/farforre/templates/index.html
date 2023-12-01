@@ -54,36 +54,20 @@
 </form>
 
   <body>
-    <div class="global_container_">
-      <header class="header">
-        <div class="header-2 group">
-          <div class="left">
-            <div class="logo group">
-              <img class="layer" src="{% static 'images/logo.svg' %}" alt="" width="46" height="43">
-              <div class="dot"></div>
-            </div>
-          </div>
-          <div class="right group">
-            <p class="text-6">{% trans "ГОЛОВНА" %}</p>
-            <p class="text-6">{% trans "GALLERY" %}</p>
-            <p class="text-6">{% trans "COLLECTIONS" %}</p>
-            <p class="text-6">{% trans "ABOUT US" %}</p>
-            <p class="text-6">{% trans "CONTACTS" %}</p>
-
-            <div class="btn-menu">
-              <div class="rectangle-82"></div>
-              <div class="rectangle-82-copy"></div>
-              <div class="rectangle-82-copy-2"></div>
-            </div>
-            <div class="basket-icon">
-              <img class="handbag" src="{% static 'images/handbag.png' %}" alt="" width="24" height="24">
-              <div class="ellipse-5-holder">
-                3
-              </div>
-            </div>
-            <img class="heart" src="{% static 'images/heart.png' %}" alt="" width="25" height="22">
-            <img class="magnifier" src="{% static 'images/magnifier.png' %}" alt="" width="24" height="24">
-          </div>
+    <header class="header fixed-header">
+      <nav class="navigation-menu">
+        <a href="{% url 'home' %}" class="menu-item">{% trans "ГОЛОВНА" %}</a>
+        <a href="{% url 'gallery' %}" class="menu-item">{% trans "ГАЛЕРЕЯ" %}</a>
+    
+        <div class="logo group">
+          <img class="layer" src="{% static 'images/logo.svg' %}" alt="Лого" width="46" height="43">
+        </div>
+    
+        <a href="{% url 'about' %}" class="menu-item">{% trans "ПРО НАС" %}</a>
+        <a href="{% url 'contact' %}" class="menu-item">{% trans "КОНТАКТИ" %}</a>
+      </nav>
+    </header>
+    
         </div>
         <div class="section-slider group">
           <div class="slogan">

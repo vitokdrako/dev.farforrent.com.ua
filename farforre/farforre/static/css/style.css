@@ -160,123 +160,38 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
-.header {
-  margin: 0 auto;
-  position: relative;
-  width: 1878px;
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* або інший колір фону */
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-.header-2 {
-  margin: 0 auto;
-  position: relative;
-  width: 1871px;
+
+.navigation-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
-.left {
-  float: left;
-  position: relative;
-  width: 112px;
-}
-.logo {
-  position: relative;
-}
-.layer {
-  float: left;
-  margin: 0 3px 0 0;
-}
-.right {
-  float: right;
-  margin: 5px 0 0;
-  position: relative;
-  width: 872px;
-}
-.text {
-  float: left;
-  margin: 8px 0 0;
-}
-.btn-menu {
-  float: right;
-  margin: 2px 0 0;
-  min-height: 24px;
-  padding: 6px 4px;
-  position: relative;
-  width: 24px;
-  border: 2px solid #000000; /*stroke*/
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  background: #ffffff;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box; /*Will not allow bg color to leak outside borders*/
-}
-.rectangle-82 {
-  height: 2px;
-  width: 11px;
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
-  border-radius: 1px;
-  background: #000000;
-}
-.rectangle-82-copy {
-  display: block;
-  height: 2px;
-  left: 2.5px;
-  margin: 1px auto 0;
-  position: relative;
-  width: 7px;
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
-  border-radius: 1px;
-  background: #000000;
-}
-.rectangle-82-copy-2 {
-  height: 2px;
-  margin: 1px 0 0;
-  width: 11px;
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
-  border-radius: 1px;
-  background: #000000;
-}
-.basket-icon {
-  float: right;
-  margin: 0 10px 0 0;
-  position: relative;
-  width: 38px;
-}
-.handbag {
-  display: block;
-  position: relative;
-}
-.ellipse-5-holder {
-  left: 7.5px;
-  margin: -12px auto 0;
-  min-height: 23px;
-  position: relative;
-  width: 23px;
-  border: 2px solid #ebe8e3; /*stroke*/
-  -webkit-border-radius: 11.5px;
-  -moz-border-radius: 11.5px;
-  border-radius: 11.5px;
-  background: #000000;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box; /*Will not allow bg color to leak outside borders*/
-  color: #ffffff;
-  font-family: MyriadPro, serif;
-  font-size: 0.6875rem; /* 11px / 16px = 0.6875rem */
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  line-height: 23px;
+
+.navigation-menu .logo {
+  flex-grow: 1;
   text-align: center;
 }
-.heart {
-  float: right;
-  margin: 3px 21px 0 0;
+
+.menu-item {
+  text-decoration: none;
+  color: #000;
+  margin: 0 15px;
 }
-.magnifier {
-  float: right;
-  margin: 2px 20px 0 0;
+
+.menu-item:hover {
+  color: #555;
 }
+
 .section-slider {
   margin: 14px 0 0;
   min-height: 589px;
