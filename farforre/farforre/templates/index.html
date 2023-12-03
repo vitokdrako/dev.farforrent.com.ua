@@ -55,19 +55,39 @@
 
   <body>
     <header class="header fixed-header">
-      <nav class="navigation-menu">
-        <a href="{% url 'home' %}" class="menu-item">{% trans "ГОЛОВНА" %}</a>
-        <a href="{% url 'gallery' %}" class="menu-item">{% trans "ГАЛЕРЕЯ" %}</a>
+      <div class="menu-container">
+          <div class="menu-left">
+            <!-- Тут можуть бути лінки або інші елементи -->
+          </div>
     
-        <div class="logo group">
-          <img class="layer" src="{% static 'images/logo.svg' %}" alt="Лого" width="46" height="43">
-        </div>
-    
-        <a href="{% url 'about' %}" class="menu-item">{% trans "ПРО НАС" %}</a>
-        <a href="{% url 'contact' %}" class="menu-item">{% trans "КОНТАКТИ" %}</a>
-      </nav>
-    </header>
-    
+          <!-- Центральна частина -->
+          <div class="menu-center">
+            <a href="{% url 'home' %}" class="menu-item">{% trans "ГОЛОВНА" %}</a>
+            <a href="{% url 'gallery' %}" class="menu-item">{% trans "ГАЛЕРЕЯ" %}</a>
+            <div class="logo">
+              <img src="{% static 'images/logo.svg' %}" alt="Лого" width="46" height="43">
+            </div>
+            <a href="{% url 'about' %}" class="menu-item">{% trans "ПРО НАС" %}</a>
+            <a href="{% url 'contact' %}" class="menu-item">{% trans "КОНТАКТИ" %}</a>
+          </div>
+           <!-- Права частина -->
+      <div class="menu-right">
+        <a href="favorite.html" class="menu-icon">
+          <img src="{% static 'images/icons/favorite.svg' %}" alt="Saved">
+        </a>
+        <a href="search.html" class="menu-icon">
+          <img src="{% static 'images/icons/search.svg' %}" alt="Search">
+        </a>
+        <a href="cart.html" class="menu-icon">
+          <img src="{% static 'images/icons/cart.svg' %}" alt="Cart">
+        </a>
+        <a href="account.html" class="menu-icon">
+          <img src="{% static 'images/icons/account.svg' %}" alt="Account">
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
         </div>
         <div class="section-slider group">
           <div class="slogan">

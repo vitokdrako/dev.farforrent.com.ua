@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'FarforCustomFont';
+  src: url('../fonts/FARFOR_Script.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 /**
 * Eric Meyer's Reset CSS v2.0
 */
@@ -163,6 +169,7 @@ body {
 
 .header {
   font-family: 'FarforCustomFont', sans-serif;
+  font-size: 25px;
 }
 
 .fixed-header {
@@ -170,9 +177,16 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff; /* або інший колір фону */
+  background-color: #fff;
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-between; /* Центрувати між лівою та правою частиною */
+  align-items: center;
+  width: 100%;
 }
 
 .navigation-menu {
@@ -187,6 +201,7 @@ body {
   text-align: center;
 }
 
+
 .menu-item {
   text-decoration: none;
   color: #000;
@@ -195,6 +210,19 @@ body {
 
 .menu-item:hover {
   color: #555;
+}
+
+.menu-right {
+  display: block;
+  justify-content: flex-end;
+}
+.menu-icon {
+  margin-left: 15px; /* Відступ між іконками */
+}
+
+.menu-icon img {
+  height: 24px;
+  width: auto;
 }
 
 .section-slider {
@@ -2308,11 +2336,4 @@ body {
 }
 .text-style {
   line-height: 18px;
-}
-
-@font-face {
-  font-family: 'FarforCustomFont';
-  src: url('/fonts/FARFOR_Script.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
 }
