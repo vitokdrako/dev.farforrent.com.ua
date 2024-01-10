@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html>
   <head>
@@ -29,30 +30,30 @@
   <body>
     <div class="global_container_">
 		<a href="index.html">
-           <img class="farfor_main_page" src="images/farfor_main_page.png" alt="" width="308" height="109">
+      <img class="farfor_main_page" src="{% static 'images/farfor_main_page.png' %}" alt="" width="308" height="109">
 			</a>
 		<a href="gallery.html">
-           <img class="gallery" src="images/gallery.png" alt="" width="201" height="66">
+           <img class="gallery" src="{% static 'images/gallery.png' %}" alt="" width="201" height="66">
 	        </a>
 		<a href="contacts.html">
-           <img class="contacts" src="images/contacts.png" alt="" width="194" height="64">
+           <img class="contacts" src="{% static 'images/contacts.png' %}" alt="" width="194" height="64">
 			</a>
 		<a href="rent_rules.html">
-           <img class="rent-rules" src="images/rent_rules.png" alt="" width="183" height="69">
+           <img class="rent-rules" src="{% static 'images/rent_rules.png' %}" alt="" width="183" height="69">
 			</a>
     <div class="row group">
 		 <a href="favorites.html">
-           <img class="favorites" src="images/favorites.png" alt="" width="28" height="27">
+           <img class="favorites" src="{% static 'images/favorites.png' %}" alt="" width="28" height="27">
 		    </a>
 		 <a href="search.html">
-           <img class="search" src="images/search.png" alt="" width="32" height="35">
+           <img class="search" src="{% static 'images/search.png' %}" alt="" width="32" height="35">
 			 </a>
 		 <a href="search.html">
-           <img src="images/cart.png" alt="" width="33" height="37">
+           <img src="{% static 'images/cart.png' %}" alt="" width="33" height="37">
 			 </a>
       </div>
-      <img class="line-header" src="images/line_header.png" alt="" width="865" height="4">
-      <img class="line-header-copy" src="images/line_header_copy.png" alt="" width="808" height="4">
+      <img class="line-header" src="{% static 'images/line_header.png' %}" alt="" width="865" height="4">
+      <img class="line-header-copy" src="{% static 'images/line_header_copy.png' %}" alt="" width="808" height="4">
     </div>
   </body>
 </html>
