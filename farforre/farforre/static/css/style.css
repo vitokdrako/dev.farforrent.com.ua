@@ -203,7 +203,7 @@ body {
   position: absolute;
   top: 0;
   width: 20%; /* 216px / 1080px = 20% */
-  background: url(images/sub_menu.png) no-repeat center 0;
+  background: url(.../images/sub_menu.png) no-repeat center 0;
 }
 .row > * {
   float: left;
