@@ -14,6 +14,18 @@ def about(request):
 def contact(request):
     return render(request, 'contact.html')
 
+def rules(request):
+    return render(request, 'rules.html')
+
+def favorites(request):
+    return render(request, 'favorites.html')
+
+def search(request):
+    return render(request, 'search.html')
+
+def cart(request):
+    return render(request, 'cart.html')
+
 def register(request):
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)

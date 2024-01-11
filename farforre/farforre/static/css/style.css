@@ -142,6 +142,7 @@ html {
 html {
   font-size: 16px;
 }
+
 body {
   color: #010000;
   font-size: 12px;
@@ -237,4 +238,10 @@ body {
   position: absolute;
   top: 133px;
   width: 74.81481%; /* 808px / 1080px = 74.81481% */
+}
+.register-button {
+  left: 90%;
+  position: relative;
+  top: 220px;
+  
 }

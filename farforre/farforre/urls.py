@@ -25,12 +25,17 @@ urlpatterns = [
 ]
 
 urlpatterns += i18n_patterns(
+    
+    path('register/', views.register, name='register'),
     path("admin/", admin.site.urls),
-    path('', views.index, name='index'),
-    path('', views.index, name='home'),
-    path('home/', views.index, name='home'),
+    path('', views.index, name='home'),  # Використовуйте 'home' як основне ім'я
     path('gallery/', views.gallery, name='gallery'),
     path('about/', views.about, name='about'),
     path('contact/', views.contact, name='contact'),
+    path('rules/', views.rules, name='rules'),
+    path('favorites/', views.favorites, name='favorites'),
+    path('search/', views.search, name='search'),
+    path('cart/', views.cart, name='cart'),
 )
+
 

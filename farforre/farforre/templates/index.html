@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Your site's title should be here</title>
+    <title>Farfor Decor</title>
     <meta charset="UTF-8">
     <meta name="description" content="Your site's description should be here">
     <meta name="keywords" content="Your site's keywords should be here">
@@ -28,32 +28,47 @@
   <![endif]--> 
   </head>
   <body>
-    <div class="global_container_">
-		<a href="index.html">
-      <img class="farfor_main_page" src="{% static 'images/farfor_main_page.png' %}" alt="" width="308" height="109">
-			</a>
-		<a href="gallery.html">
-           <img class="gallery" src="{% static 'images/gallery.png' %}" alt="" width="201" height="66">
-	        </a>
-		<a href="contacts.html">
-           <img class="contacts" src="{% static 'images/contacts.png' %}" alt="" width="194" height="64">
-			</a>
-		<a href="rent_rules.html">
-           <img class="rent-rules" src="{% static 'images/rent_rules.png' %}" alt="" width="183" height="69">
-			</a>
-    <div class="row group">
-		 <a href="favorites.html">
-           <img class="favorites" src="{% static 'images/favorites.png' %}" alt="" width="28" height="27">
-		    </a>
-		 <a href="search.html">
-           <img class="search" src="{% static 'images/search.png' %}" alt="" width="32" height="35">
-			 </a>
-		 <a href="search.html">
-           <img src="{% static 'images/cart.png' %}" alt="" width="33" height="37">
-			 </a>
-      </div>
+      <header>
+        <div class="global_container_">
+          <a href="{% url 'home' %}">
+            <img class="farfor_main_page" src="{% static 'images/farfor_main_page.png' %}" alt="" width="308" height="109">
+             </a>
+          <a href="{% url 'gallery' %}">
+            <img class="gallery" src="{% static 'images/gallery.png' %}" alt="" width="201" height="66">
+             </a>
+          <a href="{% url 'contact' %}">
+            <img class="contacts" src="{% static 'images/contacts.png' %}" alt="" width="194" height="64">
+             </a>
+	        <a href="{% url 'rules' %}">
+            <img class="rent-rules" src="{% static 'images/rent_rules.png' %}" alt="" width="183" height="69">
+		      	 </a>
+        <div class="row group">
+		      <a href="{% url 'favorites' %}">
+            <img class="favorites" src="{% static 'images/favorites.png' %}" alt="" width="28" height="27">
+		         </a>
+		      <a href="{% url 'search' %}">
+            <img class="search" src="{% static 'images/search.png' %}" alt="" width="32" height="35">
+			       </a>
+		      <a href="{% url 'cart' %}">
+            <img src="{% static 'images/cart.png' %}" alt="" width="33" height="37">
+			       </a> 
+         </div>
+         <a href="{% url 'register' %}" class="register-button">
+            <img src="{% static 'images/account.png' %}" alt="" width="80" height="110">
+              </a>
+
       <img class="line-header" src="{% static 'images/line_header.png' %}" alt="" width="865" height="4">
       <img class="line-header-copy" src="{% static 'images/line_header_copy.png' %}" alt="" width="808" height="4">
     </div>
+  </header>
+
+  <main>
+    <!-- Вміст головної сторінки -->
+  </main>
+
+  <footer>
+    <!-- Інформація футера -->
+  </footer> 
+  
   </body>
 </html>
