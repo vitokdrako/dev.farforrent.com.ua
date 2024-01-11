@@ -25,7 +25,6 @@ urlpatterns = [
 ]
 
 urlpatterns += i18n_patterns(
-    path("polls/", include("polls.urls")),
     path("admin/", admin.site.urls),
     path('', views.index, name='index'),
     path('', views.index, name='home'),
