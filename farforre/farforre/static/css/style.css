@@ -199,12 +199,13 @@ body {
 .row {
   left: 80%;
   min-height: 229px;
-  padding: 58px 2.037037% 128px 7.592593%; /* 22px / 1080px = 2.037037%, 82px / 1080px = 7.592593% */
+  padding: 58px 2.037037% 128px 7.592593%;
   position: absolute;
   top: 0;
-  width: 20%; /* 216px / 1080px = 20% */
-  background: url(.../images/sub_menu.png) no-repeat center 0;
+  width: 20%;
+  background: url('/static/images/sub_menu.png') no-repeat center top;
 }
+
 .row > * {
   float: left;
   margin: 0 8.303572% 0 0; /* 9.3px / 112px = 8.303572% */
