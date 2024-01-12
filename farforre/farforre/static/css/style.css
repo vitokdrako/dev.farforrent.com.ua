@@ -155,6 +155,7 @@ body {
   background-size: cover; /* Розтягнути фон на всю сторінку */
 }
 
+
 .global_container_ {
   left: 1.5%;
   float: none;
@@ -239,9 +240,13 @@ body {
   top: 133px;
   width: 74.81481%; /* 808px / 1080px = 74.81481% */
 }
-.register-button {
-  left: 0px;
-  position: relative;
-  top: 220px;
-  
+.register-button{
+  position: absolute;
+  top: 175px;
+  left: -3px;
+}
+
+.phone-button{
+  position: absolute;
+  top: 110px;
 }
