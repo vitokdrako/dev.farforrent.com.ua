@@ -240,7 +240,7 @@ body {
   width: 74.81481%; /* 808px / 1080px = 74.81481% */
 }
 .register-button {
-  left: 90%;
+  left: 0px;
   position: relative;
   top: 220px;
   
