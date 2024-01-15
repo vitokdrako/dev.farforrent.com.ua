@@ -9,15 +9,11 @@
 body {
   background-color: #e1e1e1 !important; /* Вибраний фоновий колір */
 }
-
-.header,
-.header * {
-  box-sizing: border-box;
-}
-.header {
-  position: absolute;
-  inset: 0;
-}
+  
+ .header {
+    position: absolute;
+    inset: 0;
+  }
 .farfor-logo {
   width: 236px;
   height: 86px;
@@ -120,4 +116,121 @@ body {
   top: 52px;
   object-fit: cover;
   z-index: 2;
+}
+
+@media screen and (max-width: 992px) {
+
+  .header * {
+    box-sizing: border-box;
+  }
+  .header {
+    background: #e1e1e1;
+    width: 992px;
+    height: 3500px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .farfor-logo {
+    width: 236px;
+    height: 86px;
+    position: absolute;
+    left: 0px;
+    top: 25px;
+    object-fit: cover;
+  }
+  .contacts {
+    width: 149px;
+    height: 51px;
+    position: absolute;
+    left: 290px;
+    top: 41px;
+    object-fit: cover;
+  }
+  .gallery {
+    width: 153px;
+    height: 53px;
+    position: absolute;
+    left: 459px;
+    top: 41px;
+    object-fit: cover;
+  }
+  .rent-rules {
+    width: 140px;
+    height: 54px;
+    position: absolute;
+    left: 637px;
+    top: 39px;
+    object-fit: cover;
+  }
+  .background-icon-menu {
+    width: 166px;
+    height: 181px;
+    position: absolute;
+    left: 829px;
+    top: 0px;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .line-header {
+    width: 828.75px;
+    height: 5px;
+    position: absolute;
+    left: 0px;
+    top: 13px;
+    object-fit: cover;
+  }
+  .line-header-copy {
+    width: 619px;
+    height: 3px;
+    position: absolute;
+    left: 0px;
+    top: 116px;
+    object-fit: cover;
+  }
+  .cart {
+    width: 23px;
+    height: 25.76px;
+    position: absolute;
+    left: 965px;
+    top: 57px;
+    object-fit: cover;
+    z-index: 2;
+  }
+  .favorites {
+    width: 23px;
+    height: 24.1px;
+    position: absolute;
+    left: 934px;
+    top: 57px;
+    object-fit: cover;
+    z-index: 2;
+  }
+  .search {
+    width: 23px;
+    height: 26.68px;
+    position: absolute;
+    left: 905px;
+    top: 57px;
+    object-fit: cover;
+    z-index: 2;
+  }
+  .account {
+    width: 67px;
+    height: 87px;
+    position: absolute;
+    left: 999px;
+    top: 166px;
+    transform-origin: 0 0;
+    transform: rotate(0deg) scale(-1, 1);
+    object-fit: cover;
+  }
+  .phone {
+    width: 54px;
+    height: 64px;
+    position: absolute;
+    left: 0px;
+    top: 125px;
+    object-fit: cover;
+  }
 }
