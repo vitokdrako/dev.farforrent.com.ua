@@ -9,228 +9,266 @@
 body {
   background-color: #e1e1e1 !important; /* Вибраний фоновий колір */
 }
-  
- .header {
-    position: absolute;
-    inset: 0;
-  }
-.farfor-logo {
-  width: 236px;
-  height: 86px;
-  position: absolute;
-  left: 177px;
-  top: 31px;
-  object-fit: cover;
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
 }
-.contacts {
-  width: 149px;
-  height: 51px;
-  position: absolute;
-  left: 601px;
-  top: 47px;
-  object-fit: cover;
+.main-container {
+  background: #ffffff;
+  width: 1440px;
+  height: 3498px;
+  position: relative;
+  overflow: hidden;
 }
-.rent-rules {
-  width: 140px;
-  height: 54px;
+.background { 
+  width: 1440px;
+  height: 798px;
   position: absolute;
-  left: 948px;
-  top: 45px;
-  object-fit: cover;
-}
-.background-icon-menu {
-  width: 166px;
-  height: 181px;
-  position: absolute;
-  left: 1109px;
+  left: 0px;
   top: 0px;
   object-fit: cover;
-  z-index: 1;
-
 }
-.gallery {
-  width: 153px;
-  height: 53px;
+.farfor-logo {
+  width: 280px;
+  height: 256.6px;
   position: absolute;
-  left: 770px;
-  top: 47px;
+  left: 580px;
+  top: 267px;
   object-fit: cover;
 }
-.account {
-  width: 67px;
-  height: 87px;
+.gallery-container {
+  background: #d9d9d9;
+  border-radius: 40px;
+  width: 250px;
+  height: 250px;
   position: absolute;
-  left: 1278px;
-  top: 166px;
+  left: 838px;
+  top: 39px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.gallery {
+  color: #000000;
+  text-align: left;
+  font-family: 'FarforCustomFont';
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 912px;
+  top: 155px;
+}
+.contacts-container {
+  background: #d9d9d9;
+  border-radius: 40px;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  left: 355px;
+  top: 507px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.contacts {
+  color: #000000;
+  text-align: left;
+  font-family: 'FarforCustomFont';
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 428px;
+  top: 623px;
+}
+.rent-rules-container {
+  background: #d9d9d9;
+  border-radius: 40px;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  left: 50px;
+  top: 507px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.rent-rules {
+  color: #000000;
+  text-align: left;
+  font-family: 'FarforCustomFont';
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 90px;
+  top: 623px;
+}
+.favorites-container {
+  background: #d9d9d9;
+  border-radius: 40px;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  left: 1143px;
+  top: 507px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.favorites {
+  color: #000000;
+  text-align: left;
+  font-family: 'FarforCustomFont';
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 1210px;
+  top: 629px;
+}
+.search-container {
+  background: #d9d9d9;
+  border-radius: 40px;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  left: 838px;
+  top: 507px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.search {
+  color: #000000;
+  text-align: left;
+  font-family: 'FarforCustomFont';
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 930px;
+  top: 626px;
+}
+.news-container {
+  background: #e1e1e1;
+  border-radius: 40px;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  left: 50px;
+  top: 39px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.news {
+  color: #000000;
+  text-align: left;
+  font-family: 'FarforCustomFont';
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 153px;
+  top: 152px;
+}
+.about-us-container {
+  background: #d9d9d9;
+  border-radius: 40px;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  left: 355px;
+  top: 39px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.about-us {
+  color: #000000;
+  text-align: left;
+  font-family: 'FarforCustomFont';
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 440px;
+  top: 152px;
+}
+.social-container {
+  background: #d9d9d9;
+  border-radius: 40px;
+  width: 509px;
+  height: 180px;
+  position: absolute;
+  left: 54px;
+  top: 308px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.socials {
+  color: #000000;
+  text-align: left;
+  font-family: 'FarforCustomFont';
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 249px;
+  top: 389px;
+}
+.phone-icon {
+  width: 70.16px;
+  height: 71.34px;
+  position: absolute;
+  left: 355px;
+  top: 635px;
+  object-fit: cover;
+}
+.farfor-logo {
+  width: 280px;
+  height: 256.6px;
+  position: absolute;
+  left: 580px;
+  top: 267px;
+  object-fit: cover;
+}
+.account-container {
+  background: #d9d9d9;
+  border-radius: 40px;
+  width: 509px;
+  height: 180px;
+  position: absolute;
+  left: 885px;
+  top: 308px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.account {
+  color: #000000;
+  text-align: left;
+  font-family: 'FarforCustomFont';
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 1020px;
+  top: 389px;
+}
+.account-icon {
+  width: 87.05px;
+  height: 96.97px;
+  position: absolute;
+  left: 1391.05px;
+  top: 364px;
   transform-origin: 0 0;
   transform: rotate(0deg) scale(-1, 1);
   object-fit: cover;
 }
-.line-header {
-  width: 828.75px;
-  height: 5px;
+
+.cart-container {
+  background: #d9d9d9;
+  border-radius: 40px;
+  width: 250px;
+  height: 250px;
   position: absolute;
-  left: 165px;
-  top: 19px;
-  object-fit: cover;
-}
-.line-header-copy {
-  width: 619px;
-  height: 3px;
-  position: absolute;
-  left: 165px;
-  top: 122px;
-  object-fit: cover;
-}
-.phone {
-  width: 54px;
-  height: 64px;
-  position: absolute;
-  left: 165px;
-  top: 131px;
-  object-fit: cover;
-}
-.search {
-  width: 23px;
-  height: 26.68px;
-  position: absolute;
-  left: 1180px;
-  top: 52px;
-  object-fit: cover;
-  z-index: 2;
-}
-.favorites {
-  width: 23px;
-  height: 24.1px;
-  position: absolute;
-  left: 1211px;
-  top: 53px;
-  object-fit: cover;
-  z-index: 2;
+  left: 1143px;
+  top: 39px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .cart {
-  width: 23px;
-  height: 25.76px;
+  color: #000000;
+  text-align: left;
+  font-family: 'FarforCustomFont';
+  font-size: 20px;
+  font-weight: 400;
   position: absolute;
-  left: 1243px;
-  top: 52px;
-  object-fit: cover;
-  z-index: 2;
+  left: 1235px;
+  top: 158px;
 }
-
-@media screen and (max-width: 992px) {
-
-  .header * {
-    box-sizing: border-box;
-  }
-  .header {
-    background: #e1e1e1;
-    width: 992px;
-    height: 3500px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .farfor-logo {
-    width: 236px;
-    height: 86px;
-    position: absolute;
-    left: 0px;
-    top: 25px;
-    object-fit: cover;
-  }
-  .contacts {
-    width: 149px;
-    height: 51px;
-    position: absolute;
-    left: 290px;
-    top: 41px;
-    object-fit: cover;
-  }
-  .gallery {
-    width: 153px;
-    height: 53px;
-    position: absolute;
-    left: 459px;
-    top: 41px;
-    object-fit: cover;
-  }
-  .rent-rules {
-    width: 140px;
-    height: 54px;
-    position: absolute;
-    left: 637px;
-    top: 39px;
-    object-fit: cover;
-  }
-  .background-icon-menu {
-    width: 166px;
-    height: 181px;
-    position: absolute;
-    left: 829px;
-    top: 0px;
-    object-fit: cover;
-    z-index: 1;
-  }
-  .line-header {
-    width: 828.75px;
-    height: 5px;
-    position: absolute;
-    left: 0px;
-    top: 13px;
-    object-fit: cover;
-  }
-  .line-header-copy {
-    width: 619px;
-    height: 3px;
-    position: absolute;
-    left: 0px;
-    top: 116px;
-    object-fit: cover;
-  }
-  .cart {
-    width: 23px;
-    height: 25.76px;
-    position: absolute;
-    left: 965px;
-    top: 57px;
-    object-fit: cover;
-    z-index: 2;
-  }
-  .favorites {
-    width: 23px;
-    height: 24.1px;
-    position: absolute;
-    left: 934px;
-    top: 57px;
-    object-fit: cover;
-    z-index: 2;
-  }
-  .search {
-    width: 23px;
-    height: 26.68px;
-    position: absolute;
-    left: 905px;
-    top: 57px;
-    object-fit: cover;
-    z-index: 2;
-  }
-  .account {
-    width: 67px;
-    height: 87px;
-    position: absolute;
-    left: 999px;
-    top: 166px;
-    transform-origin: 0 0;
-    transform: rotate(0deg) scale(-1, 1);
-    object-fit: cover;
-  }
-  .phone {
-    width: 54px;
-    height: 64px;
-    position: absolute;
-    left: 0px;
-    top: 125px;
-    object-fit: cover;
-  }
+.cart-icon {
+  width: 87px;
+  height: 69px;
+  position: absolute;
+  left: 1180px;
+  top: 220px;
+  object-fit: cover;
 }
