@@ -28,41 +28,48 @@
   <![endif]--> 
   </head>
   <body>
-      <header>
-          <div class="main-container">
-            <img class="background" src="{% static 'images/background.png' %}"/>
-          <a href="{% url 'home' %}"><img class="farfor-logo" src="{% static 'images/farfor_logo.png' %}" alt=""></a></div>
-          <a href="{% url 'gallery' %}"><div class="gallery-container" src="{% static 'images/main-container.png' %}" alt=""></a></div>
-              <div class="gallery">Галерея</div>
-          <a href="{% url 'contact' %}"><div class="contacts-container" src="{% static 'images/main-container.png' %}" alt=""></a></div>
-              <div class="contacts">Контакти</div>
-                <img class="phone" src="{% static 'images/phone_icon.png' %}" alt="">
-          <a href="{% url 'rules' %}"><div class="rent-rules-container" src="{% static 'images/main-container.png' %}" alt=""></a></div>
-              <div class="rent-rules">Умови оренди</div>
-		      <a href="{% url 'favorites' %}"><div class="favorites-container" src="{% static 'images/main-container.png' %}" alt=""></a></div>
-              <div class="favorites">Збережене</div>
-		      <a href="{% url 'search' %}"><div class="search-container" src="{% static 'images/main-container.png' %}" alt=""></a></div>
-              <div class="search">Пошук</div>
-		      <a href="{% url 'cart' %}"><div class="cart-container"src="{% static 'images/main-container.png' %}" alt=""></a> </div>
-              <div class="cart">Кошик</div>
-                <img class="cart-icon" src="{% static 'images/cart-icon.png' %}" />
-          <a href="{% url 'register' %}"><div class="account-container" src="{% static 'images/main-container.png' %}" alt=""></a></div>
-              <div class="account">Акаунт споживача</div>
-
-          <div class="news-container" src="{% static 'images/main-container.png' %}"></div>
-              <div class="news">Новини</div>
-
-          <div class="about-us-container" src="{% static 'images/main-container.png' %}"></div>
-              <div class="about-us">Про нас</div>
-
-          <div class="social-container" src="{% static 'images/main-container.png' %}"></div>
-              <div class="socials">Соціальні мережі</div>
-              
-        
-
-      
-    </div>
-  </header>
+    <header>
+      <div class="main-container">
+        <img class="background" src="{% static 'images/background.jpg' %}"/>
+        <a href="{% url 'home' %}">
+          <img class="farfor-logo" src="{% static 'images/farfor_logo.png' %}" alt="">
+        </a>
+        <div class="gallery-container">
+          <a href="{% url 'gallery' %}">Галерея</a>
+        </div>
+        <div class="contacts-container">
+          <a href="{% url 'contact' %}">Контакти</a>
+        </div>
+        <img class="phone-icon" src="{% static 'images/phone_icon.png' %}" alt="">
+        <div class="rent-rules-container">
+          <a href="{% url 'rules' %}">Умови оренди</a>
+        </div>
+        <div class="favorites-container">
+          <a href="{% url 'favorites' %}">Збережене</a>
+        </div>
+        <div class="search-container">
+          <a href="{% url 'search' %}">Пошук</a>
+        </div>
+        <div class="cart-container">
+          <a href="{% url 'cart' %}">Кошик</a>
+        </div>
+        <img class="cart-icon" src="{% static 'images/cart_icon.png' %}" />
+        <div class="account-container">
+          <a href="{% url 'register' %}">Акаунт споживача</a>
+        </div>
+        <img class="cart-icon" src="{% static 'images/account_icon.png' %}" />
+        <div class="news-container">
+          <div class="news">Новини</div>
+        </div>
+        <div class="about-us-container">
+          <div class="about-us">Про нас</div>
+        </div>
+        <div class="social-container">
+          <div class="socials">Соціальні мережі</div>
+        </div>
+      </div>
+    </header>
+  </body>
 
   <main>
     <!-- Вміст головної сторінки -->

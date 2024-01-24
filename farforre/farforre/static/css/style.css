@@ -5,29 +5,40 @@
   font-weight: normal;
   font-style: normal;
 }
-
-body {
-  background-color: #e1e1e1 !important; /* Вибраний фоновий колір */
-}
-
-.main-container,
-.main-container * {
-  box-sizing: border-box;
-}
-.main-container {
-  background: #ffffff;
-  width: 1440px;
-  height: 3498px;
-  position: relative;
-  overflow: hidden;
-}
-.background { 
-  width: 1440px;
-  height: 798px;
+a {
+  text-decoration: none;
+  color: #000000;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
   position: absolute;
-  left: 0px;
-  top: 0px;
-  object-fit: cover;
+}
+body, html {
+  font-family: 'FarforCustomFont', sans-serif;
+}
+body {
+  background-color: #e1e1e1 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+header {
+  width: 1440px;
+  height: 800px;
+  position: relative;
+ overflow: hidden;
+}
+
+.background {
+width: 100%;
+height: 100%;
+position: absolute;
+left: 0;
+top: 0;
+object-fit: cover;
 }
 .farfor-logo {
   width: 280px;
@@ -37,166 +48,70 @@ body {
   top: 267px;
   object-fit: cover;
 }
-.gallery-container {
+.gallery-container, .contacts-container, .rent-rules-container, .favorites-container, .search-container,
+.news-container, .about-us-container, .cart-container {
   background: #d9d9d9;
   border-radius: 40px;
   width: 250px;
   height: 250px;
   position: absolute;
-  left: 838px;
-  top: 39px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center; /* Горизонтальне вирівнювання */
+  align-items: center; /* Вертикальне вирівнювання */
 }
-.gallery {
-  color: #000000;
-  text-align: left;
-  font-family: 'FarforCustomFont';
-  font-size: 20px;
-  font-weight: 400;
-  position: absolute;
-  left: 912px;
-  top: 155px;
-}
-.contacts-container {
+.social-container, .account-container {
   background: #d9d9d9;
   border-radius: 40px;
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  left: 355px;
-  top: 507px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-.contacts {
-  color: #000000;
-  text-align: left;
-  font-family: 'FarforCustomFont';
-  font-size: 20px;
-  font-weight: 400;
-  position: absolute;
-  left: 428px;
-  top: 623px;
-}
-.rent-rules-container {
-  background: #d9d9d9;
-  border-radius: 40px;
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  left: 50px;
-  top: 507px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-.rent-rules {
-  color: #000000;
-  text-align: left;
-  font-family: 'FarforCustomFont';
-  font-size: 20px;
-  font-weight: 400;
-  position: absolute;
-  left: 90px;
-  top: 623px;
-}
-.favorites-container {
-  background: #d9d9d9;
-  border-radius: 40px;
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  left: 1143px;
-  top: 507px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-.favorites {
-  color: #000000;
-  text-align: left;
-  font-family: 'FarforCustomFont';
-  font-size: 20px;
-  font-weight: 400;
-  position: absolute;
-  left: 1210px;
-  top: 629px;
-}
-.search-container {
-  background: #d9d9d9;
-  border-radius: 40px;
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  left: 838px;
-  top: 507px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-.search {
-  color: #000000;
-  text-align: left;
-  font-family: 'FarforCustomFont';
-  font-size: 20px;
-  font-weight: 400;
-  position: absolute;
-  left: 930px;
-  top: 626px;
-}
-.news-container {
-  background: #e1e1e1;
-  border-radius: 40px;
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  left: 50px;
-  top: 39px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-.news {
-  color: #000000;
-  text-align: left;
-  font-family: 'FarforCustomFont';
-  font-size: 20px;
-  font-weight: 400;
-  position: absolute;
-  left: 153px;
-  top: 152px;
-}
-.about-us-container {
-  background: #d9d9d9;
-  border-radius: 40px;
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  left: 355px;
-  top: 39px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-.about-us {
-  color: #000000;
-  text-align: left;
-  font-family: 'FarforCustomFont';
-  font-size: 20px;
-  font-weight: 400;
-  position: absolute;
-  left: 440px;
-  top: 152px;
-}
-.social-container {
-  background: #d9d9d9;
-  border-radius: 40px;
-  width: 509px;
+  width: 508px;
   height: 180px;
   position: absolute;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center; /* Горизонтальне вирівнювання */
+  align-items: center; /* Вертикальне вирівнювання */
+}
+.social-container{
   left: 54px;
   top: 308px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.socials {
-  color: #000000;
-  text-align: left;
-  font-family: 'FarforCustomFont';
-  font-size: 20px;
-  font-weight: 400;
-  position: absolute;
-  left: 249px;
-  top: 389px;
+.account-container{
+  left: 880px;
+  top: 308px;
 }
+.cart-container {
+  left: 1143px;
+  top: 39px;
+}
+.gallery-container {
+  left: 838px;
+  top: 39px;
+}
+.contacts-container {
+  left: 355px;
+  top: 507px;
+}
+.rent-rules-container {
+  left: 50px;
+  top: 507px;
+}
+.favorites-container {
+  left: 1143px;
+  top: 507px;
+}
+.search-container {
+  left: 838px;
+  top: 507px;
+}
+.news-container {
+  left: 50px;
+  top: 39px;
+}
+.about-us-container {
+  left: 355px;
+  top: 39px;
+}
+
 .phone-icon {
   width: 70.16px;
   height: 71.34px;
@@ -205,64 +120,13 @@ body {
   top: 635px;
   object-fit: cover;
 }
-.farfor-logo {
-  width: 280px;
-  height: 256.6px;
-  position: absolute;
-  left: 580px;
-  top: 267px;
-  object-fit: cover;
-}
-.account-container {
-  background: #d9d9d9;
-  border-radius: 40px;
-  width: 509px;
-  height: 180px;
-  position: absolute;
-  left: 885px;
-  top: 308px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-.account {
-  color: #000000;
-  text-align: left;
-  font-family: 'FarforCustomFont';
-  font-size: 20px;
-  font-weight: 400;
-  position: absolute;
-  left: 1020px;
-  top: 389px;
-}
 .account-icon {
   width: 87.05px;
   height: 96.97px;
   position: absolute;
   left: 1391.05px;
-  top: 364px;
-  transform-origin: 0 0;
-  transform: rotate(0deg) scale(-1, 1);
+  top: 664px;
   object-fit: cover;
-}
-
-.cart-container {
-  background: #d9d9d9;
-  border-radius: 40px;
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  left: 1143px;
-  top: 39px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-.cart {
-  color: #000000;
-  text-align: left;
-  font-family: 'FarforCustomFont';
-  font-size: 20px;
-  font-weight: 400;
-  position: absolute;
-  left: 1235px;
-  top: 158px;
 }
 .cart-icon {
   width: 87px;
