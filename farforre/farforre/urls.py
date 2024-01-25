@@ -19,6 +19,7 @@ from django.urls import include, path
 from django.conf.urls.i18n import i18n_patterns
 from . import views
 from .views import customer_list
+from .views import page_detail
 
 urlpatterns = [
     path('i18n/', include('django.conf.urls.i18n')),
@@ -38,6 +39,7 @@ urlpatterns += i18n_patterns(
     path('search/', views.search, name='search'),
     path('cart/', views.cart, name='cart'),
     path('customers/', customer_list, name='customers'),
+    path('page/<slug:slug>/', page_detail, name='page_detail'),
 )
 
 

@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from .forms import UserRegisterForm
 from django.contrib import messages
-from .models import Customer
+from .models import Customer, Page
 
 def index(request):
     return render(request, 'index.html')
@@ -42,3 +42,10 @@ def register(request):
 def customer_list(request):
     customers = Customer.objects.all()
     return render(request, 'customer_list.html', {'customers': customers})
+
+def page_detail(request, slug):
+    # Отримання сторінки за слагом або відображення 404 помилки, якщо вона не існує
+    page = get_object_or_404(Page, slug=slug)
+
+    # Відправлення даних сторінки у шаблон
+    return render(request, 'page_detail.html', {'page': page})
