@@ -29,3 +29,15 @@ class GalleryItem(models.Model):
 
     def __str__(self):
         return self.name
+    
+class Product(models.Model):
+    name = models.CharField(max_length=100, verbose_name="Назва товару")
+    article_number = models.CharField(max_length=50, verbose_name="Артикул")
+    availability = models.CharField(max_length=50, verbose_name="Наявність")
+    size = models.CharField(max_length=50, verbose_name="Розмір")
+    weight = models.DecimalField(max_digits=6, decimal_places=2, verbose_name="Вага")
+    damages = models.CharField(max_length=100, blank=True, verbose_name="Збитки")
+    image = models.ImageField(upload_to='product_images/', verbose_name="Зображення")
+
+    def __str__(self):
+        return self.name
