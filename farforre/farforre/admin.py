@@ -1,4 +1,9 @@
 from django.contrib import admin
-from django.contrib.auth.models import User
+from .models import Page, Customer, GalleryItem
 
-admin.site.register(User)
+# Зареєструйте ваші моделі тут
+admin.site.register(Page)
+admin.site.register(Customer)
+admin.site.register(GalleryItem)
+
+# Ваші інші налаштування...

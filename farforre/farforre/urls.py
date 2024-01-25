@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import include, path
 from django.conf.urls.i18n import i18n_patterns
 from . import views
+from .views import customer_list
 
 urlpatterns = [
     path('i18n/', include('django.conf.urls.i18n')),
@@ -36,6 +37,7 @@ urlpatterns += i18n_patterns(
     path('favorites/', views.favorites, name='favorites'),
     path('search/', views.search, name='search'),
     path('cart/', views.cart, name='cart'),
+    path('customers/', customer_list, name='customers'),
 )
 
 
