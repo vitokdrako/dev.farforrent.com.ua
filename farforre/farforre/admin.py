@@ -6,12 +6,22 @@ admin.site.register(Page)
 admin.site.register(Customer)
 admin.site.register(GalleryItem)
 
+def dublicate_product(modeladmin, request, queryset):
+    for product in queryset:
+        product.id = None 
+        product.save()
+
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
     list_display = ('preview_image', 'name', 'article_number', 'availability', 'size', 'weight')
+    list_editable = ('name', 'article_number', 'availability', 'size', 'weight')
+    list_display_links = ('preview_image',)
     search_fields = ('name', 'article_number')
+    actions = [dublicate_product]
 
     def preview_image(self, obj):
-        return format_html('<img src="{}" style="width: 45px; height:45px;" />', obj.image.url)
+        if obj.image:
+            return format_html('<img src="{}" style="width: 45px; height:45px;" />', obj.image.url)
+        return ""
 
     preview_image.short_description = 'Прев\'ю'
