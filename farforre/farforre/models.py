@@ -33,6 +33,7 @@ class GalleryItem(models.Model):
 class Product(models.Model):
     name = models.CharField(max_length=100, verbose_name="Назва товару")
     article_number = models.CharField(max_length=50, verbose_name="Артикул")
+    color = models.CharField(max_length=20, blank=True, verbose_name="Колір")
     availability = models.CharField(max_length=50, verbose_name="Наявність")
     size = models.CharField(max_length=50, verbose_name="Розмір")
     weight = models.DecimalField(max_digits=6, decimal_places=2, verbose_name="Вага")

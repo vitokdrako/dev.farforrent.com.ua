@@ -13,10 +13,10 @@ def dublicate_product(modeladmin, request, queryset):
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('preview_image', 'name', 'article_number', 'availability', 'size', 'weight')
-    list_editable = ('name', 'article_number', 'availability', 'size', 'weight')
+    list_display = ('preview_image', 'name','color', 'article_number', 'availability', 'size', 'weight')
+    list_editable = ('name','color', 'article_number', 'availability', 'size', 'weight')
     list_display_links = ('preview_image',)
-    search_fields = ('name', 'article_number')
+    search_fields = ('name', 'article_number','color')
     actions = [dublicate_product]
 
     def preview_image(self, obj):
