@@ -1,7 +1,7 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .forms import UserRegisterForm
 from django.contrib import messages
-from .models import Customer, Page
+from .models import Customer, Page, Product
 
 def index(request):
     return render(request, 'index.html')
@@ -49,3 +49,7 @@ def page_detail(request, slug):
 
     # Відправлення даних сторінки у шаблон
     return render(request, 'page_detail.html', {'page': page})
+
+def product_detail(request, pk):
+    product = get_object_or_404(Product, pk=pk)
+    return render(request, 'product_detail.html', {'product': product})

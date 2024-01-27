@@ -42,6 +42,7 @@ urlpatterns += i18n_patterns(
     path('cart/', views.cart, name='cart'),
     path('customers/', customer_list, name='customers'),
     path('page/<slug:slug>/', page_detail, name='page_detail'),
+    path('product/<int:pk>/', views.product_detail, name='product_detail'),
 )
 
 if settings.DEBUG:
