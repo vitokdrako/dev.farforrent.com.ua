@@ -168,7 +168,7 @@ object-fit: cover;
 }
 
 .product-article-number, .product-size, .product-weight, .product-availability,
-.product-damages {
+.product-damages, .product-prise  {
   padding-left: 20px;
   font-size: 20px;
 }
