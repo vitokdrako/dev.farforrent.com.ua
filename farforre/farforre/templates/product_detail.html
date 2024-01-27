@@ -16,8 +16,6 @@
             </div>
         </div>
             <div class="product-details">
-                <h2 class="product-name">{{ product.name }}</h2>
-                <p class="product-prise">₴: {{ product.prise }}</p>
                 <p class="product-article-number">Артикул: {{ product.article_number }}</p>
                 <p class="product-size">Розмір: {{ product.size }}</p>
                 <p class="product-weight">Вага: {{ product.weight }} кг</p>
@@ -25,12 +23,18 @@
                 <p class="product-damages">Збитки: {{ product.damages }}</p>
             </div>
             <div class="quantity-and-order">
+                <div class="product-prise-container">
+                    <p class="product-prise">₴ {{ product.prise }}</p>
+                </div>
                 <div class="quantity">
                     <input type="number" id="quantity-input" name="quantity" min="1" value="1">
                 </div>
                 <div class="rent-button">
-                    <button type="button" onclick="placeOrder()">Замовити</button>
+                    <button type="button" onclick="placeOrder()">Орендувати</button>
                 </div>
+            </div>
+            <div class="name-container">
+                <h2 class="product-name">{{ product.name }}</h2>
             </div>
         </div>
     </div>
