@@ -19,6 +19,7 @@ class ProductAdmin(admin.ModelAdmin):
     list_display_links = ('preview_image',)
     search_fields = ('name', 'article_number','color')
     actions = [dublicate_product]
+    filter_horizontal = ('related_products',)
     
     def view_on_site_link(self, obj):
         url = reverse('product_detail', kwargs={'pk': obj.pk})

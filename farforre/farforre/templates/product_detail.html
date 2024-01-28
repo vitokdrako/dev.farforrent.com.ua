@@ -36,6 +36,21 @@
             <div class="name-container">
                 <h2 class="product-name">{{ product.name }}</h2>
             </div>
+            <div class="related-products">
+                <h3>Супутні товари</h3>
+                <div class="related-products-list">
+                    {% for related_product in product.related_products.all %}
+                        <div class="related-product">
+                            <a href="{% url 'product_detail' related_product.pk %}">
+                                <img src="{{ related_product.image.url }}" alt="{{ related_product.name }}" class="related-product-image">
+                                <p class="related-product-name">{{ related_product.name }}</p>
+                            </a>
+                        </div>
+                    {% empty %}
+                        <p>Немає супутніх товарів.</p>
+                    {% endfor %}
+                </div>
+            </div>
         </div>
     </div>
     </header>

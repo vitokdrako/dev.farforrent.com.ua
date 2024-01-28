@@ -222,3 +222,38 @@ object-fit: cover;
   margin-left: 20px; /* Додано відступ зліва */
 }
 
+.related-products {
+  background-color: #ccc;
+  border-radius: 40px;
+  margin-top: 10px;
+  width: 250px; /* або інший бажаний розмір */
+  height: 776px;
+  position: absolute;
+  left: 25px;
+  top: 90px;
+  display: flex; /* Використання Flexbox */
+  flex-direction: column; /* Вертикальне розміщення елементів */
+  align-items: center; /* Вирівнювання елементів по центру */
+}
+
+.related-products-list {
+  display: flex;
+  flex-direction: column;
+  padding-right: 60%;
+}
+
+.related-product {
+  margin-bottom: 150px;
+}
+
+.related-product-image {
+  width: 150px; /* або інший бажаний розмір */
+  height: auto;
+  object-fit: cover;
+}
+
+.related-product-name {
+  font-size: 16px;
+  text-align: center;
+  font-family: 'FarforMode';
+}

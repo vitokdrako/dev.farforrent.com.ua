@@ -40,6 +40,7 @@ class Product(models.Model):
     weight = models.DecimalField(max_digits=6, decimal_places=2, verbose_name="Вага")
     damages = models.CharField(max_length=100, blank=True, verbose_name="Збитки")
     image = models.ImageField(upload_to='product_images/', verbose_name="Зображення")
+    related_products = models.ManyToManyField('self', blank=True, verbose_name="Супутні товари")
 
 
     def __str__(self):
