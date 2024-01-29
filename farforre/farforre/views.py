@@ -1,7 +1,9 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .forms import UserRegisterForm
 from django.contrib import messages
-from .models import Customer, Page, Product
+from .models import Customer, Page, Product, ProductVariant
+from django.http import JsonResponse
+
 
 def index(request):
     return render(request, 'index.html')
@@ -53,3 +55,13 @@ def page_detail(request, slug):
 def product_detail(request, pk):
     product = get_object_or_404(Product, pk=pk)
     return render(request, 'product_detail.html', {'product': product})
+
+def get_variant(request):
+    variant_id = request.GET.get('variant_id')
+    variant = ProductVariant.objects.get(id=variant_id)
+    data = {
+        'price': variant.price,
+        'availability': variant.availability,
+        
+    }
+    return JsonResponse(data)

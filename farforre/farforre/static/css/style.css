@@ -155,10 +155,10 @@ object-fit: cover;
   background: #e1e1e1;
   border-radius: 40px;
   width: 220px;
-  height: 276px;
+  height: 400px;
   position: absolute;
   left: 1180px;
-  top: 560px;
+  top: 430px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .name-container {
@@ -174,7 +174,7 @@ object-fit: cover;
   font-size: 50px; 
 }
 .product-article-number, .product-size, .product-weight, .product-availability,
-.product-damages {
+.product-damages, .product-height, .product-length, .product-width, .product-diameter {
   padding-left: 20px;
   font-size: 20px;
 }
@@ -256,4 +256,43 @@ object-fit: cover;
   font-size: 16px;
   text-align: center;
   font-family: 'FarforMode';
+}
+.product-variants {
+  margin-top: 20px; /* Відступ зверху */
+  text-align: center; /* Вирівнювання тексту по центру */
+  position: absolute;
+  left: 400px;
+  top: 280px;
+
+}
+
+#variant-selector {
+  padding: 5px 10px; /* Внутрішній відступ */
+  border-radius: 5px; /* Закруглені краї */
+  border: 1px solid #ccc; /* Межа */
+  background-color: #ffffff; /* Колір фону */
+}
+
+.quantity-and-order {
+  margin-top: 20px; /* Додатковий відступ зверху */
+  display: flex;
+  justify-content: center; /* Вирівнювання елементів по центру */
+}
+
+.quantity input[type="number"] {
+  width: 60px; /* Ширина поля вводу */
+  margin-right: 10px; /* Відступ справа */
+}
+
+.rent-button button {
+  background-color: #dcdcdcdb; /* Колір фону */
+  color: rgb(8, 8, 8); /* Колір тексту */
+  border: none; /* Без межі */
+  padding: 10px 20px; /* Внутрішній відступ */
+  border-radius: 5px; /* Закруглені краї */
+  cursor: pointer; /* Вказівник курсору */
+}
+
+.rent-button button:hover {
+  background-color: #616161; /* Колір при наведенні */
 }

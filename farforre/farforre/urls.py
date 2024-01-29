@@ -43,6 +43,7 @@ urlpatterns += i18n_patterns(
     path('customers/', customer_list, name='customers'),
     path('page/<slug:slug>/', page_detail, name='page_detail'),
     path('product/<int:pk>/', views.product_detail, name='product_detail'),
+    path('get-variant/', views.get_variant, name='get_variant'),
 )
 
 if settings.DEBUG:
